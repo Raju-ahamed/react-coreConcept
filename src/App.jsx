@@ -4,7 +4,8 @@ import Batsman from './batsman';
 import { Suspense } from 'react';
 import User from './user';
 import Friends from './friends';
-import Posts from './posts'
+import Posts from './posts';
+import Balls from './bowlers'
 
 
 // const fetchUser = fetch("https://jsonplaceholder.typicode.com/users")
@@ -23,12 +24,13 @@ function App() {
 // function handleClick(){
 //   alert("i clicked now")
 // }
-const handleArrow=(num)=>{
-  alert(num+7);
-}
+// const handleArrow=(num)=>{
+//   alert(num+7);
+// }
 
   return (
     <>
+    <Balls></Balls>
       {/* <Suspense fallback={<p></p>}>
     <Posts allPost={allPost}></Posts> */}
       {/* </Suspense> */}
@@ -45,7 +47,7 @@ const handleArrow=(num)=>{
       <Batsman></Batsman> */}
 
 
-      
+
     </>
   )
 }
